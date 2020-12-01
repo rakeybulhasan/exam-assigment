@@ -1,0 +1,20 @@
+{
+    "name": "hasan/php-mvc-mysql",
+    "description": "Exam test php mvc and mysql",
+    "type": "project",
+    "authors": [
+        {
+            "name": "rakeybulhasan",
+            "email": "rakeybulhasan@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "App\\": "App/",
+            "Core\\": "src/",
+            "Config\\": "Config/"
+        }
+    }
+}

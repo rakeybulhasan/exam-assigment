@@ -56,10 +56,10 @@ class BuyerController extends Controller {
         date_default_timezone_set('Asia/Dhaka');
         $error= array();
 
-        /*if($_COOKIE['preventMultipleSubmit']=='yes')
+        if($_COOKIE['preventMultipleSubmit']=='yes')
         {
             return array('error'=>true,'status'=>'404','message'=>'Prevent multiple submissions within 24 hours');
-        }*/
+        }
 
         if (empty($_POST["buyer"])) {
             $error['buyer'] = "Buyer is required";

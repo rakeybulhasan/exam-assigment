@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Nov 26, 2020 at 12:22 PM
+-- Generation Time: Dec 01, 2020 at 06:43 PM
 -- Server version: 5.7.32-0ubuntu0.18.04.1
 -- PHP Version: 7.2.34-8+ubuntu18.04.1+deb.sury.org+1
 
@@ -33,7 +33,7 @@ CREATE TABLE `core_buyer` (
   `receipt_id` varchar(20) CHARACTER SET utf8 NOT NULL,
   `items` varchar(255) CHARACTER SET utf8 NOT NULL,
   `buyer_email` varchar(50) CHARACTER SET utf8 NOT NULL,
-  `buyer_ip` varchar(20) CHARACTER SET utf8 NOT NULL,
+  `buyer_ip` varchar(50) CHARACTER SET utf8 NOT NULL,
   `note` text CHARACTER SET utf8 NOT NULL,
   `city` varchar(20) CHARACTER SET utf8 NOT NULL,
   `phone` varchar(20) CHARACTER SET utf8 NOT NULL,

@@ -157,7 +157,7 @@ $mysqli = $db->getConnection();
             </tbody>
         </table>
     </form>
-    <table class="table table-bordered">
+    <table id="buyer_table" class="table table-bordered">
         <thead>
         <tr>
             <th>SL</th>

@@ -50,6 +50,7 @@ function formSubmit()
                                                 {
                                                     if(data['status']==200){
                                                         $('.alert').show().addClass('alert-success').text(data['message']);
+                                                        $("#buyer_table").load(window.location + " #buyer_table");
                                                     }
                                                     if(data['status']==404){
                                                         $('.alert').show().addClass('alert-danger').text(data['message']);

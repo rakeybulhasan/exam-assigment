@@ -31,7 +31,8 @@ class BuyerController extends Controller {
             if($_GET['searchByReceiptId']!=''){
                 $receiptId = $_GET['searchByReceiptId'];
                 $sql_query.=" AND b.receipt_id LIKE '{$receiptId}'";
-            }elseif($_GET['fromDate']!='' && $_GET['toDate']!=''){
+            }
+            if($_GET['fromDate']!='' && $_GET['toDate']!=''){
                 $fromDate = $_GET['fromDate'];
                 $toDate = $_GET['toDate'];
                 $sql_query.=" AND b.entry_at >='{$fromDate}' AND  b.entry_at <='{$toDate}'";
@@ -55,10 +56,10 @@ class BuyerController extends Controller {
         date_default_timezone_set('Asia/Dhaka');
         $error= array();
 
-        if($_COOKIE['preventMultipleSubmit']=='yes')
+        /*if($_COOKIE['preventMultipleSubmit']=='yes')
         {
             return array('error'=>true,'status'=>'404','message'=>'Prevent multiple submissions within 24 hours');
-        }
+        }*/
 
         if (empty($_POST["buyer"])) {
             $error['buyer'] = "Buyer is required";
